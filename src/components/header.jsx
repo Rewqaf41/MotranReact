@@ -1,7 +1,7 @@
 import React from "react"
-import logo from '../img/logo.svg';
-import phoneIcon from '../img/phone.svg';
-import mailIcon from '../img/mail.svg';
+import logo from '../img/logo.svg'
+import mailIcon from '../img/mail.svg'
+import phoneIcon from '../img/phone.svg'
 
 const Header = () => {
     return(
@@ -16,11 +16,11 @@ const Header = () => {
           <div className="text-end">
             <div className="nav">
               <img style={{ width: '30px', height: '30px' }} src={phoneIcon} alt="phone" />&nbsp;
-              <div className="contact">+7(960)500-38-39</div>
+              <a href='tel:+79605003839' className="contact anim">+7(960)500-38-39</a>
             </div>
             <div className="nav">
               <img style={{ width: '30px', height: '30px' }} src={mailIcon} alt="mail" />&nbsp;
-              <div className="contact">motran@internet.ru</div>
+              <a href='mailto:motran@internet.ru' className="contact anim">motran@internet.ru</a>
             </div>
           </div>
         </div>

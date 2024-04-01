@@ -1,10 +1,8 @@
-import React from "react";
+import React from "react"
 
-import phoneIcon from '../img/phone.svg';
-import mailIcon from '../img/mail.svg';
-import pin from '../img/pin.svg';
-import tg from '../img/tg.svg'
-import com from '../img/com.svg'
+import mailIcon from '../img/mail.svg'
+import phoneIcon from '../img/phone.svg'
+import pin from '../img/pin.svg'
 
 const Footer = () => {
     return (
@@ -20,11 +18,11 @@ const Footer = () => {
               <div id="block2">
                 <div className="nav">
                   <img style={{ width: '30px', height: '30px' }} src={phoneIcon} alt="phone" />&nbsp;
-                  <div style={{color: '#ffffff'}} className="contact">+7(960)500-38-39</div>
+                  <a href='tel:+79605003839' className="contact anim">+7(960)500-38-39</a>
                 </div>
               <div className="nav">
                 <img style={{ width: '30px', height: '30px' }} src={mailIcon} alt="mail" />&nbsp;
-                <div style={{color: '#ffffff'}} className="contact">motran@internet.ru</div>
+                <a href='mailto:motran@internet.ru' className="contact anim">motran@internet.ru</a>
               </div>
             </div>
           </div>

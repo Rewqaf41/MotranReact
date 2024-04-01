@@ -1,11 +1,12 @@
-import React from "react";
+import React from "react"
 
-import about from '../img/about.svg';
+import about from '../img/about.svg'
 import verified from '../img/verified.svg'
 
-import about1 from '../img/about1.png';
-import about2 from '../img/about2.png';
-import partners from '../img/Partners.png';
+import about1 from '../img/about1.png'
+import about2 from '../img/about2.png'
+import partnerTitle from '../img/Partners-rectangle.png'
+import partners from '../img/Partners.png'
 import sk from '../img/skolkovo.png'
 
 export const AboutCompany = () => {
@@ -24,12 +25,13 @@ export const AboutCompany = () => {
                 {/* Second about */}
                     <img className='about2' src={about2} alt='about2'/>
                     <div className='text-about2'>
-                    Компания успешно работает с крупнейшими предприятиями России.<br/> Выпускаемая продукция имеет полный комплект документов,<br /> подтверждающих качество и надежность, проходит полный цикл<br /> испытаний и контроль качества.<br /><br />
-                    Благодаря многолетнему опыту и успешной реализации<br /> сложных инженерно-технических задач, мы гарантируем<br /> своим заказчикам высокое качество производимой продукции и своевременное исполнение взятых на себя обязательств.
+                    Компания успешно работает с крупнейшими<br /> предприятиями России. Выпускаемая продукция имеет<br /> полный комплект документов, подтверждающих качество и надежность,<br /> проходит полный цикл испытаний и контроль качества.<br /><br />
+                    Благодаря многолетнему опыту и успешной реализации сложных инженерно-технических задач, мы гарантируем<br /> своим заказчикам высокое качество производимой<br /> продукции и своевременное исполнение взятых на себя обязательств.
                     </div>
                 </div>
             </div>
-            <img src={partners} alt="partners"  className='mt-5 partners'/>
+            <img src={partnerTitle} alt="partnerTitle"  className='mt-5 partner'/>
+            <img src={partners} alt="" className="partners"/>
         </div>
     );
 }
@@ -44,7 +46,7 @@ export const AboutSkolkovo = () => {
                 <div className='nav'>
                     <img style={{ width: '40px', height: '40px' }} src={verified} alt="verified"/>
                     <div className='skolkovo-text2'>
-                        Факт резидентства в "Сколково" в очередной раз<br /> подтверждает высокий уровень качества,<br /> технологичности, надёжности и эффективности<br /> нашего оборудования.
+                        Факт резидентства в "Сколково" в очередной раз<br /> подтверждает высокий уровень компетентности,<br /> знаний и эффективности нашей команды.
                     </div>
                 </div>
                 </div>

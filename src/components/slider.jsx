@@ -4,7 +4,7 @@ import rectangle from '../img/rectangle.png';
 import mainpagephoto from '../img/main-page.png';
 import mainpagephoto2 from '../img/main-page2.png';
 
-const Slider = () => {
+const Slider = ({slide1, slide2}) => {
     return (
         <div className='slider'>
           <div className='slider__item'>
@@ -12,7 +12,7 @@ const Slider = () => {
               <div style={{position: 'relative'}}>
               <img style={{height: '100px', width: '100%'}} src={rectangle} alt='rectangle' />
                 <div className='title'>
-                  Российский производитель <span className='text'>планетарных грузоподъемных лебедок, механизмов поворота и бортовых редукторов для строительно-дорожных машин</span> с использованием современныхтехнологий и собственных разработок.
+                  Российский производитель <span className='text'>планетарных грузоподъемных лебедок, механизмов поворота и бортовых редукторов для строительно-дорожных машин</span> с использованием современных технологий и собственных разработок.
                 </div>
               </div>
               <img className='mainpagephoto' src={mainpagephoto} alt='mainpagephoto' />

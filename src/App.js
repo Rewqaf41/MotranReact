@@ -1,47 +1,60 @@
+import { AboutCompany, AboutSkolkovo } from './components/about.jsx'
+import Footer from './components/footer.jsx'
+import Header from './components/header.jsx'
 import ProductCard from './components/productcard.jsx'
-import Header from './components/header.jsx';
-import Slider from './components/slider.jsx';
-import Technic from './components/technic.jsx';
-import { AboutCompany, AboutSkolkovo } from './components/about.jsx';
-import Production from './components/production.jsx';
-import Footer from './components/footer.jsx';
+import Production from './components/production.jsx'
+import Slider from './components/slider.jsx'
+import Technic from './components/technic.jsx'
 
-import './func/slick.min.js';
-import './func/slick.js';
+import './func/slick.js'
+import './func/slick.min.js'
 
-import './css/App.css';
-import './css/bootstrap.css';
- 
-import product from './img/Product.png';
-import mrp from './img/red.png'
+import './css/App.css'
+import './css/bootstrap.css'
+
+import { Helmet } from 'react-helmet'
+import product from './img/Product.png'
 import leb1 from './img/leb1.png'
 import leb2 from './img/leb2.png'
 import mpk from './img/mpk.png'
+import mrp from './img/red.png'
+import reductor from './img/reductor.png'
 
 function App() {
   return (
-    <div>
-      <meta name="viewport" content="width=device-width" />
+    <div className='light-theme'>
+      <Helmet>
+      <meta name="keywords" content="Мотран, Motran" />
+      <meta name="description" content="Сайт по продажи, производства запчастей для кранов Мотран" />
+      <meta name="viewport" content="width=device-width" user-scalable="no"/>
+      <link rel="canonical" href="https://motran.ru" />
+      </Helmet>
       <Header/>
       <content>
         <Slider/>
+        <div id='main-container'>
         <Technic/>
+        </div>
+        <div id = 'main-container'>
         <AboutCompany/>
+        </div>
         <Production/>
         <productCard>
           <img className='mt-5' src={product} alt="product"/>
-          <div id='container'>
-            <div className='nav'>
-              <ProductCard image={mrp} text={<div>Мотор-редуктор<br /> планетарный<br /> (МРП)</div>}/>
-              <ProductCard needtomove={true} image={leb1} text={<div>Планетарные<br /> грузоподъемные лебедки<br /> ЛПМ-6.26.100</div>}/>
-              <ProductCard image={mpk} text={<div>Планетарные<br /> механизмы поворота<br />(МПК)</div>}/>
-              <ProductCard needtomove={true} image={leb2} text={<div>Планетарные<br /> грузоподъемные лебедки<br /> ЛПК-40.26.100</div>}/>
-            </div>
+          <div id='container' style={{ display: "flex", flexWrap: "wrap" }}>
+              <ProductCard i={"mrp"} image={mrp} text={<div>Мотор-редуктор<br /> планетарный<br /> (МРП)</div>}/>
+              <ProductCard i={"leb1"} needtomove={true} image={leb1} text={<div>Планетарные<br /> грузоподъемные лебедки<br /> ЛПМ-6.26.100</div>}/>
+              <ProductCard i={"mpk"} image={mpk} text={<div>Планетарные<br /> механизмы поворота<br />(МПК)</div>}/>
+              <ProductCard i={"leb2"} needtomove={true} image={leb2} text={<div>Планетарные<br /> грузоподъемные лебедки<br /> ЛПК-40.26.100</div>}/><br />
+              <ProductCard i={"reductor"} needtomove={true} image={reductor} text={<div>Планетарный редуктор<br /> привода хода<br/> </div>}/>
           </div>
         </productCard>
+        <div id='main-container'>
         <AboutSkolkovo/>
+        </div>
       </content>
       <Footer/>
+      <noscript style={{color: '#000'}}> Возможно в вашем браузере отключен JavaScript смените браузер или перезагрузите страницу </noscript>
     </div>
   )
 }
