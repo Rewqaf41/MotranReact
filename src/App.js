@@ -3,7 +3,7 @@ import Footer from './components/footer.jsx'
 import Header from './components/header.jsx'
 import ProductCard from './components/productcard.jsx'
 import Production from './components/production.jsx'
-import Slider from './components/slider.jsx'
+import { SimpleSlider } from './components/slider.jsx'
 import Technic from './components/technic.jsx'
 
 import './func/slick.js'
@@ -31,7 +31,7 @@ function App() {
       </Helmet>
       <Header/>
       <content>
-        <Slider/>
+        <SimpleSlider />
         <div id='main-container'>
         <Technic/>
         </div>
