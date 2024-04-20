@@ -1,10 +1,10 @@
-import React from "react";
+import React from "react"
 
-import rectangle from '../img/rectangle.png';
-import mainpagephoto from '../img/main-page.png';
-import mainpagephoto2 from '../img/main-page2.png';
+import mainpagephoto from '../img/main-page.png'
+import mainpagephoto2 from '../img/main-page2.png'
+import rectangle from '../img/rectangle.png'
 
-const Slider = ({slide1, slide2}) => {
+const Slider = () => {
     return (
         <div className='slider'>
           <div className='slider__item'>

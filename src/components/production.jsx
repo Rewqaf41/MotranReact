@@ -1,5 +1,7 @@
 import React from "react"
-import { Slider__item } from "./slider__item"
+
+import production from '../img/Production.png'
+import { SliderItem } from "./sliderItem.jsx"
 
 import card1 from '../img/Card1.png'
 import card2 from '../img/Card2.png'
@@ -9,13 +11,16 @@ import card5 from '../img/Card5.png'
 
 const Production = () => {
     return (
-        <div className="mt-3 bg3">
-            <div className="slidercard">
-                <Slider__item card={card1}/>
-                <Slider__item card={card2}/>
-                <Slider__item card={card3}/>
-                <Slider__item card={card4}/>
-                <Slider__item card={card5}/>
+        <div className="mt-3 bg3 position-relative">
+            <div className="d-flex justify-content-end position-absolute end-0 top-0">
+                <img className="production" src={production} alt="Production" />
+            </div>
+            <div className='slidercard'>
+                <SliderItem card={card1}/>
+                <SliderItem card={card2}/>
+                <SliderItem card={card3}/>
+                <SliderItem card={card4}/>
+                <SliderItem card={card5}/>
             </div>
         </div>
     )

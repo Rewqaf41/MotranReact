@@ -45,34 +45,43 @@ header {
 	font-family: Jost;
 	src: url(../fonts/Jost-VariableFont_wght.ttf);
 }
+
 @media (min-width: 320px) {
 	.logo {
 		width: 300px;
 		height: 60px;
-		margin-right: 175px;
+		margin-left: 60px;
 	}
 	.title {
-		left: 34.5%;
+		left: 33.7%;
 	}
 	.title2 {
-		left: 23.5%;
+		left: 23.3%;
 		bottom: 5%;
 	}
 	.technic {
 		margin: 0 145px;
 	}
 	.text-about1 {
-		margin: 30px 0 20px 0;
+		margin: 30px 0 20px -60px;
 	}
 	.about1 {
-		margin-top: 50px;
-		margin-left: 175px;
+		height: 380px;
+		width: 280px;
+		margin-top: 20px;
+		margin-left: 200px;
 	}
 	.text-about2 {
-		margin: 20px 0px 0px 50px;
+		margin: 20px 10px 0px 50px;
 	}
 	.about2 {
-		margin-top: 30px;
+		height: 330px;
+		width: 320px;
+		margin-top: 20px;
+		margin-left: -60px;
+	}
+	.partners {
+		width: 80%;
 	}
 }
 
@@ -80,7 +89,6 @@ header {
 	.logo {
 		width: 300px;
 		height: 60px;
-		margin-right: 175px;
 	}
 	.title {
 		left: 38.5%;
@@ -100,6 +108,9 @@ header {
 	}
 	.about2 {
 		margin-left: 20px;
+	}
+	.partners {
+		width: 80%;
 	}
 }
 @media (min-width: 600px) {
@@ -122,12 +133,13 @@ header {
 	.text-about2 {
 		margin: 50px 0px 0px 50px;
 	}
+	.partners {
+		width: 80%;
+	}
 }
 @media (min-width: 1025px) {
 	.logo {
-		width: 100;
-		height: 20;
-		margin-left: 116px;
+		margin-left: 105px;
 	}
 	.title {
 		left: 38.6%;
@@ -140,13 +152,14 @@ header {
 		margin: 0 250px;
 	}
 	.text-about1 {
-		margin: 50px 0px 30px 80px;
+		margin: 50px 0px 30px 50px;
 	}
 	.about1 {
 		height: 350px;
 		width: 350px;
 		margin-top: 50px;
-		margin-left: 180px;
+		margin-left: 100px;
+		margin-right: 43px;
 	}
 	.text-about2 {
 		margin: 35px 50px 0px 100px;
@@ -155,7 +168,10 @@ header {
 		height: 350px;
 		width: 320px;
 		margin-top: 30px;
-		margin-left: 80px;
+		margin-left: 50px;
+	}
+	.partners {
+		width: 70%;
 	}
 }
 @media (min-width: 1920px) {
@@ -178,7 +194,40 @@ header {
 		margin-left: 275px;
 	}
 	.text-about2 {
-		margin: 65px 250px 0px 90px;
+		margin: 40px 250px 0px 90px;
+	}
+	.partners {
+		width: 45%;
+	}
+}
+@media (max-width: 320px) {
+	.title {
+		left: 44.5%;
+	}
+	.title2 {
+		left: 32.5%;
+		bottom: 12.5%;
+	}
+	.text-about1 {
+		margin: 50px 0px 30px 275px;
+	}
+	.about1 {
+		margin-top: 50px;
+		margin-left: 200px;
+	}
+	.about2 {
+		margin-top: 30px;
+		margin-left: 275px;
+	}
+	.text-about2 {
+		margin: 40px 250px 0px 90px;
+	}
+	.technic {
+		width: 50%;
+		height: 50%;
+	}
+	.partners {
+		width: 50%;
 	}
 }
 /** Slider **/
@@ -190,9 +239,13 @@ header {
 	overflow: hidden;
 }
 .slick-track {
+	display: -webkit-box;
 	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
 }
 .slider .slick-dots {
+	display: -webkit-box;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -286,9 +339,6 @@ img {
 	font-weight: 600;
 	font-size: 28px;
 }
-.text-about2 {
-	/* margin: 20px 0px 0px 50px; */
-}
 .partner {
 	display: block;
 	margin: 0 auto;
@@ -297,7 +347,6 @@ img {
 .partners {
 	display: block;
 	margin: 0 auto;
-	width: 70%;
 }
 /** Product Card + slider **/
 .bg3 {
@@ -328,12 +377,36 @@ img {
 }
 /* About2 */
 .skolkovo-text1 {
+	margin-top: 20px;
 	font-size: 22px;
 	margin-left: 50px;
 }
 .skolkovo-text2 {
 	font-size: 22px;
 	margin-left: 10px;
+}
+.skolkovo-text3 {
+	font-size: 22px;
+	margin-right: 130px;
+	margin-left: -39px;
+}
+.skolkovo-text4 {
+	font-size: 22px;
+	margin-right: 90px;
+	padding-top: 20px;
+}
+.sk {
+	width: 350px;
+	height: 250px;
+}
+.fasie {
+	margin-top: 30px;
+	width: 260px;
+	height: 150px;
+}
+.patent {
+	width: 200px;
+	height: 300px;
 }
 /* Footer */
 .bg4 {
@@ -380,4 +453,7 @@ img {
 
 .phone {
 	text-decoration: none;
+}
+.text-end {
+	justify-content: space-between;
 }
