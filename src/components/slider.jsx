@@ -38,7 +38,7 @@ export function SimpleSlider() {
             <div style={{ position: 'relative' }}>
               <img className='mainpagephoto2' src={mainpagephoto2} alt='mainpagephoto2' />
               <div>
-                <img style={{ width: '100%' }} src={rectangle} alt='rectangle' />
+                <img style={{ width: '100%', height: '120px' }} src={rectangle} alt='rectangle' />
                 <div className='title2'>Производим планетарные грузоподъемные лебедки с собственной технологией <span className='text'>нарезки<br /> барабана типа "Лебус"</span> с запатентованной конструкцией сбрасывателей на реборде<br /> и <span className='text'>специальным канатоукладчиком грузового каната.</span></div>
               </div>
             </div>

@@ -57,7 +57,7 @@ header {
 	}
 	.title2 {
 		left: 23.3%;
-		bottom: 5%;
+		bottom: 2%;
 	}
 	.technic {
 		margin: 0 145px;
@@ -82,6 +82,10 @@ header {
 	}
 	.partners {
 		width: 80%;
+	}
+	.cards {
+		padding: 20px;
+		margin-top: 80px;
 	}
 }
 
@@ -146,7 +150,7 @@ header {
 	}
 	.title2 {
 		left: 27.5%;
-		bottom: 7%;
+		bottom: 3%;
 	}
 	.technic {
 		margin: 0 250px;
@@ -173,6 +177,10 @@ header {
 	.partners {
 		width: 70%;
 	}
+	.cards {
+		padding: 50px;
+		margin-top: 40px;
+	}
 }
 @media (min-width: 1920px) {
 	.title {
@@ -187,7 +195,7 @@ header {
 	}
 	.about1 {
 		margin-top: 50px;
-		margin-left: 200px;
+		margin-left: 125px;
 	}
 	.about2 {
 		margin-top: 30px;
@@ -199,42 +207,90 @@ header {
 	.partners {
 		width: 45%;
 	}
+	.cards {
+		padding: 50px;
+		margin-top: 48px;
+	}
 }
-@media (max-width: 320px) {
+@media (min-width: 2000px) {
 	.title {
-		left: 44.5%;
+		left: 46.5%;
 	}
 	.title2 {
-		left: 32.5%;
-		bottom: 12.5%;
+		left: 34.5%;
+		bottom: 2%;
 	}
 	.text-about1 {
-		margin: 50px 0px 30px 275px;
+		margin: 50px 0px 30px 375px;
 	}
 	.about1 {
 		margin-top: 50px;
-		margin-left: 200px;
+		margin-left: 125px;
 	}
 	.about2 {
 		margin-top: 30px;
-		margin-left: 275px;
+		margin-left: 375px;
 	}
 	.text-about2 {
 		margin: 40px 250px 0px 90px;
 	}
-	.technic {
-		width: 50%;
-		height: 50%;
+	.cards {
+		padding: 70px;
+		margin-top: 18px;
 	}
-	.partners {
-		width: 50%;
+}
+@media (min-width: 2200px) {
+	.title {
+		left: 48.5%;
+	}
+	.title2 {
+		left: 36.2%;
+		bottom: 2%;
+	}
+	.text-about1 {
+		margin: 50px 0px 30px 505px;
+	}
+	.about1 {
+		margin-top: 50px;
+		margin-left: 132px;
+	}
+	.about2 {
+		margin-top: 30px;
+		margin-left: 505px;
+	}
+	.text-about2 {
+		margin: 40px 250px 0px 90px;
+	}
+	.cards {
+		padding: 100px;
+		margin-top: 18px;
+	}
+}
+@media (min-width: 2400px) {
+	.cards {
+		padding: 100px;
+		margin-top: -20px;
+	}
+}
+@media (min-width: 2600px) {
+	.cards {
+		padding: 120px;
+		margin-top: -40px;
+	}
+}
+@media (min-width: 2800px) {
+	.cards {
+		padding: 160px;
+		margin-top: -80px;
+	}
+}
+@media (min-width: 3000px) {
+	.cards {
+		padding: 280px;
+		margin-top: -200px;
 	}
 }
 /** Slider **/
-.slider {
-	-webkit-transform: translate3d(0, 0, 0);
-	transform: translate3d(0, 0, 0);
-}
 .slick-list {
 	overflow: hidden;
 }
@@ -357,10 +413,6 @@ img {
 	/* width: 100%; */
 	height: 720px;
 	background-size: cover;
-}
-.cards {
-	margin-left: 60px;
-	margin-top: 100px;
 }
 /* Product Card */
 .cart {

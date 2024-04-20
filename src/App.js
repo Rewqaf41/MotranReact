@@ -2,12 +2,10 @@ import { AboutCompany, AboutSkolkovo } from './components/about.jsx'
 import Footer from './components/footer.jsx'
 import Header from './components/header.jsx'
 import ProductCard from './components/productcard.jsx'
-import Production from './components/production.jsx'
+import { Production } from './components/production.jsx'
 import { SimpleSlider } from './components/slider.jsx'
 import Technic from './components/technic.jsx'
 
-import './func/slick.js'
-import './func/slick.min.js'
 
 import './css/App.css'
 import './css/bootstrap.css'
