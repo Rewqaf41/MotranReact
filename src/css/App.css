@@ -1,9 +1,6 @@
 body {
 	min-width: 1240px;
 }
-.light-theme {
-	background-color: #ffffff;
-}
 .cont {
 	padding: 0px 160px;
 	margin: 0px auto;
@@ -291,6 +288,9 @@ header {
 	}
 }
 /** Slider **/
+.slidercard {
+	width: 1240px;
+}
 .slick-list {
 	overflow: hidden;
 }
@@ -397,10 +397,9 @@ img {
 .text-bold {
 	font-weight: 600;
 	font-size: 28px;
+	margin-left: 175px;
 }
 .partner {
-	display: block;
-	margin: 0 auto;
 	width: 100%;
 }
 .partners {
@@ -410,7 +409,6 @@ img {
 /** Product Card + slider **/
 .bg3 {
 	background-image: url(../img/bg3.svg);
-	/* width: 100%; */
 	height: 720px;
 	background-size: cover;
 }
@@ -472,7 +470,6 @@ img {
 	font-size: 40px;
 	color: #ffffff;
 	display: block;
-	/* font-family: Jost; */
 	font-weight: 600;
 	text-align: center;
 }
@@ -496,7 +493,6 @@ img {
 
 #block1 {
 	margin-right: 60px;
-	/* color: #ffffff; */
 }
 
 #block2 {

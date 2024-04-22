@@ -1,5 +1,5 @@
-import React from "react";
-import technic from '../img/technic.png';
+import React from "react"
+import technic from '../img/technic.png'
 
 const Technic = ({image}) => {
     return (
